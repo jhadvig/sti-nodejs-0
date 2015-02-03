@@ -10,7 +10,7 @@ User can choose between RHEL7 and CentOS7 base image.
 
 Installation
 ---------------
-*  **RHEL7 base image
+*  **RHEL7 base image**
 This image is not available as trusted build in [Docker Index](https://index.docker.io).
 
 To build a rhel-based nodejs-0.10 image, you need to run docker build it on properly subscribed RHEL machine.
@@ -21,7 +21,7 @@ $ cd sti-nodejs-010
 $ make build TARGET=rhel7
 ```
 
-*  **CentOS7 base image
+*  **CentOS7 base image**
 
 ```
 $ git clone https://github.com/jhadvig/sti-nodejs-010.git
