@@ -9,7 +9,7 @@ endif
 build:
 ifeq ("$(TARGET)","rhel7")
 	mv Dockerfile Dockerfile.centos
-	mv Dockerfile.rhel7 Dockerfile
+	mv Dockerfile.rhel Dockerfile
 	docker build -t $(IMAGE_NAME) .
 	mv Dockerfile Dockerfile.rhel
 	mv Dockerfile.centos Dockerfile
@@ -22,7 +22,7 @@ endif
 test:
 ifeq ($(TARGET),rhel7)
 	mv Dockerfile Dockerfile.centos
-	mv Dockerfile.rhel7 Dockerfile
+	mv Dockerfile.rhel Dockerfile
 	docker build -t $(IMAGE_NAME)-candidate .
 	IMAGE_NAME=$(IMAGE_NAME)-candidate test/run
 	mv Dockerfile Dockerfile.rhel
