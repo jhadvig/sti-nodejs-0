@@ -34,4 +34,5 @@ node_app=`get_main_script_from_package_json`
 SCLS+=(nodejs010)
 export X_SCLS=$(printf '%q ' "${SCLS[@]}")
 . /opt/rh/nodejs010//enable
+set -x
 exec npm start -d

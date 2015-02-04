@@ -1,6 +1,6 @@
 FROM rhel7
 
-RUN yum install -y --setopt=tsflags=nodocs yum-utils wget tar gettext \
+RUN yum install -y --setopt=tsflags=nodocs yum-utils wget gettext procps-ng \
     tar which gcc-c++ automake autoconf curl-devel openssl-devel \
     zlib-devel libxslt-devel libxml2-devel mysql-libs mysql-devel \
     postgresql-devel sqlite-devel
