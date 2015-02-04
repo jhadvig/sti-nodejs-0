@@ -26,14 +26,10 @@ try {
 NODE_EOF
 
 }  #  End of function  get_main_script_from_package_json.
-set -x
+node_app=`get_main_script_from_package_json`
+
 set +e
 
-node_app=`get_main_script_from_package_json`
-#nodejs_context "npm start -d"
-
-
-SCLS+=(nodejs010)
-export X_SCLS=$(printf '%q ' "${SCLS[@]}")
+export X_SCLS="nodejs010"
 source /opt/rh/nodejs010//enable
 exec npm start -d
