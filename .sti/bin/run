@@ -31,5 +31,5 @@ node_app=`get_main_script_from_package_json`
 set +e
 
 export X_SCLS="nodejs010"
-source /opt/rh/nodejs010//enable
+source /opt/rh/nodejs010/enable
 exec npm start -d
